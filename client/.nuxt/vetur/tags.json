@@ -1,0 +1,23 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "UserAuthForm": {
+    "description": "Auto imported from components/UserAuthForm.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  },
+  "User": {
+    "description": "Auto imported from components/User/index.vue"
+  },
+  "AuthLogin": {
+    "description": "Auto imported from components/Auth/Login/index.vue"
+  },
+  "AuthRegister": {
+    "description": "Auto imported from components/Auth/Register/index.vue"
+  }
+}

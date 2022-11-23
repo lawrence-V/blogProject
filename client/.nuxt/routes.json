@@ -1,0 +1,93 @@
+[
+  {
+    "name": "allpost",
+    "path": "/allpost",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\allpost\\\\index.vue",
+    "chunkName": "pages/allpost/index",
+    "_name": "_b7c86e84"
+  },
+  {
+    "name": "image",
+    "path": "/image",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\image.vue",
+    "chunkName": "pages/image",
+    "_name": "_7ced2ec4"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_592f0846"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_e13210a8"
+  },
+  {
+    "name": "newsfeed",
+    "path": "/newsfeed",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\newsfeed\\\\index.vue",
+    "chunkName": "pages/newsfeed/index",
+    "_name": "_3e6bdfc4"
+  },
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_2ad3d054"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_c47e1ca0"
+  },
+  {
+    "name": "testing",
+    "path": "/testing",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\testing.vue",
+    "chunkName": "pages/testing",
+    "_name": "_3b74b013"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\auth\\\\login\\\\index.vue",
+    "chunkName": "pages/auth/login/index",
+    "_name": "_21e746be"
+  },
+  {
+    "name": "auth-register",
+    "path": "/auth/register",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\auth\\\\register\\\\index.vue",
+    "chunkName": "pages/auth/register/index",
+    "_name": "_4ea1e06a"
+  },
+  {
+    "name": "allpost-id",
+    "path": "/allpost/:id",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\allpost\\\\_id.vue",
+    "chunkName": "pages/allpost/_id",
+    "_name": "_28e0e2a6"
+  },
+  {
+    "name": "newsfeed-id",
+    "path": "/newsfeed/:id",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\newsfeed\\\\_id.vue",
+    "chunkName": "pages/newsfeed/_id",
+    "_name": "_4037032c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\valde\\\\Downloads\\\\blogpost-main\\\\blogpost-main\\\\client\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_748156d6"
+  }
+]
