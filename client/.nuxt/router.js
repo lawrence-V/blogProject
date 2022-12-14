@@ -10,7 +10,7 @@ const _d07e907c = () => interopDefault(import('..\\pages\\inspire.vue' /* webpac
 const _37f6e8d1 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
 const _dcdf32ae = () => interopDefault(import('..\\pages\\newsfeed\\index.vue' /* webpackChunkName: "pages/newsfeed/index" */))
 const _35fabf5e = () => interopDefault(import('..\\pages\\profile\\index.vue' /* webpackChunkName: "pages/profile/index" */))
-const _6470326b = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _13401e60 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
 const _00662810 = () => interopDefault(import('..\\pages\\testing.vue' /* webpackChunkName: "pages/testing" */))
 const _ecd5cc8e = () => interopDefault(import('..\\pages\\auth\\login\\index.vue' /* webpackChunkName: "pages/auth/login/index" */))
 const _e88630e2 = () => interopDefault(import('..\\pages\\auth\\register\\index.vue' /* webpackChunkName: "pages/auth/register/index" */))
@@ -54,9 +54,9 @@ export const routerOptions = {
     component: _35fabf5e,
     name: "profile"
   }, {
-    path: "/register",
-    component: _6470326b,
-    name: "register"
+    path: "/signup",
+    component: _13401e60,
+    name: "signup"
   }, {
     path: "/testing",
     component: _00662810,

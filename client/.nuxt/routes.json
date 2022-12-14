@@ -42,11 +42,11 @@
     "_name": "_35fabf5e"
   },
   {
-    "name": "register",
-    "path": "/register",
-    "component": "C:\\\\development\\\\blogProject\\\\client\\\\pages\\\\register.vue",
-    "chunkName": "pages/register",
-    "_name": "_6470326b"
+    "name": "signup",
+    "path": "/signup",
+    "component": "C:\\\\development\\\\blogProject\\\\client\\\\pages\\\\signup.vue",
+    "chunkName": "pages/signup",
+    "_name": "_13401e60"
   },
   {
     "name": "testing",

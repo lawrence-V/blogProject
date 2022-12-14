@@ -7,7 +7,7 @@
 
       <div v-if="!isAuthenticated">
         <v-btn text to="/login">Login</v-btn>
-        <v-btn text to="/register">Register</v-btn>
+        <v-btn text to="/signup">Signup</v-btn>
       </div>
       <div v-else>
         <!-- login -->
