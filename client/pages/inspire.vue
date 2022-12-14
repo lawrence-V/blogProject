@@ -2,7 +2,9 @@
   <client-only>
     <div id="map-wrap" style="height: 100vh">
       <l-map :zoom="4" :center="[55.9464418, 8.1277591]">
-        <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>
+        <l-tile-layer
+          url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+        ></l-tile-layer>
         <l-marker
           v-for="marker in markers"
           :key="marker.id"
@@ -43,22 +45,22 @@ export default {
     return {
       // browser: process.browser,
       markers: [
-        { id: 1, lat: 55.8350812, lng: 8.1634942, title: 'Sirib' },
-        { id: 2, lat: 47.41322, lng: -1.229482, title: 'DOST' },
-        { id: 3, lat: 14.599512, lng: 120.984222, title: 'DSWD' },
-        { id: 4, lat: 52.520008, lng: 13.404954, title: 'CHED' },
+        { id: 1, lat: 55.8350812, lng: 8.1634942, title: "Sirib" },
+        { id: 2, lat: 47.41322, lng: -1.229482, title: "DOST" },
+        { id: 3, lat: 14.599512, lng: 120.984222, title: "DSWD" },
+        { id: 4, lat: 52.520008, lng: 13.404954, title: "CHED" },
       ],
-    }
+    };
   },
   methods: {
     removeMarker(index) {
-      this.markers.splice(index, 1)
+      this.markers.splice(index, 1);
     },
     addMarker(event) {
-      this.markers.push(event.latlng)
+      this.markers.push(event.latlng);
     },
   },
-}
+};
 </script>
 <style>
 /* #map-wrap {

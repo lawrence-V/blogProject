@@ -30,36 +30,38 @@
 <script>
 // import axios from 'axios'
 
-const urlgeteditData = 'http://localhost:8000/edit/'
-const updateurl = 'http://localhost:8000/update/'
+const urlgeteditData = "http://localhost:8100/edit/";
+const updateurl = "http://localhost:8100/update/";
 export default {
   data() {
     return {
       Blog: {
-        title: '',
-        des: '',
+        title: "",
+        des: "",
       },
-    }
+    };
   },
   methods: {
     async updatePost() {
       await this.$axios
         .put(updateurl + this.$route.params.id, this.Blog)
         .then((res) => {
-          console.log(res)
+          console.log(res);
         })
         .catch((err) => {
-          console.log(err)
-        })
+          console.log(err);
+        });
     },
   },
 
   async mounted() {
-    const result = await this.$axios.get(urlgeteditData + this.$route.params.id)
+    const result = await this.$axios.get(
+      urlgeteditData + this.$route.params.id
+    );
 
-    this.Blog = result.data
+    this.Blog = result.data;
   },
-}
+};
 </script>
 
 <style></style>

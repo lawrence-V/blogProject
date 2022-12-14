@@ -19,11 +19,22 @@ var blogSchema = mongoose.Schema({
   age: {
     type: String,
   },
-  file: {
-    type: Object,
-    required: true,
-    // type: String,
-    // required: true,
+  lat: {
+    type: Number,
+  },
+  lang: {
+    type: Number,
+  },
+  //   marker: {[{
+  //     lat : String,
+  //     lng : String
+  // }]
+  image: {
+    data: Buffer,
+    contentType: String,
+  },
+  name: {
+    type: String,
   },
 
   date: {

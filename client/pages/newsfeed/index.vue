@@ -16,11 +16,22 @@
               <tr v-for="item in Blog" :key="item._id">
                 <td class="pa-2">{{ item.title }}</td>
                 <td class="pa-2">{{ item.des.substring(0, 200) }}</td>
+                <!-- <v-img
+                  class="rounded-circle"
+                  max-height="250"
+                  max-width="250"
+                  :src="`http://localhost:8100/uploads/${item.name}`"
+                ></v-img> -->
 
                 <td class="py-2">
                   <p>{{ GettimePost(item.date) }}</p>
-                  <nuxt-link :to="'/newsfeed/' + item._id" style="text-decoration: none">
-                    <v-btn depressed color="primary">Read More</v-btn></nuxt-link
+                  <nuxt-link
+                    :to="'/newsfeed/' + item._id"
+                    style="text-decoration: none"
+                  >
+                    <v-btn depressed color="primary"
+                      >Read More</v-btn
+                    ></nuxt-link
                   >
                   <!-- <v-btn depressed color="error" @click="deletePost(item._id)">delete</v-btn> -->
                 </td>
@@ -43,11 +54,21 @@
               <tr v-for="item in LatestPost" :key="item._id">
                 <td>{{ item.title }}</td>
                 <td>{{ item.des.substring(0, 100) }}</td>
+                <v-img
+                  max-height="150"
+                  max-width="250"
+                  :src="`http://localhost:8100/uploads/${item.name}`"
+                ></v-img>
 
                 <td class="pa-3">
                   <p>{{ GetcustomizeDate(item.date) }}</p>
-                  <nuxt-link :to="'/newsfeed/' + item._id" style="text-decoration: none">
-                    <v-btn depressed color="primary">Read More</v-btn></nuxt-link
+                  <nuxt-link
+                    :to="'/newsfeed/' + item._id"
+                    style="text-decoration: none"
+                  >
+                    <v-btn depressed color="primary"
+                      >Read More</v-btn
+                    ></nuxt-link
                   >
                   <!-- <v-btn depressed color="error" @click="deletePost(item._id)">delete</v-btn> -->
                 </td>
@@ -61,45 +82,45 @@
 </template>
 
 <script>
-import moment from 'moment'
-const url = 'http://localhost:8000/getdata'
-const latesturl = 'http://localhost:8000/latestpost'
+import moment from "moment";
+const url = "http://localhost:8100/getdata";
+const latesturl = "http://localhost:8100/latestpost";
 export default {
   data() {
     return {
       Blog: [],
       LatestPost: [],
-    }
+    };
   },
 
   async mounted() {
     // get all post
-    await this.$axios
-      .get(url)
-      .then((res) => {
-        this.Blog = res.data
-        console.log(res.data)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+    // await this.$axios
+    //   .get(url)
+    //   .then((res) => {
+    //     this.Blog = res.data;
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
 
     // Get the latest five post
     await this.$axios
       .get(latesturl)
       .then((res) => {
-        this.LatestPost = res.data
+        this.LatestPost = res.data;
       })
       .catch((err) => {
-        console.log(err)
-      })
+        console.log(err);
+      });
   },
 
   methods: {
-    GetcustomizeDate: (date) => moment(date).format('MMM Do YY'),
-    GettimePost: (date) => moment(date).startOf('day').fromNow(),
+    GetcustomizeDate: (date) => moment(date).format("MMM Do YY"),
+    GettimePost: (date) => moment(date).startOf("day").fromNow(),
   },
-}
+};
 </script>
 
 <style></style>

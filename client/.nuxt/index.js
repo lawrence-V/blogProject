@@ -13,13 +13,13 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_101f2248 from 'nuxt_plugin_plugin_101f2248' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_plugin_757d1a98 from 'nuxt_plugin_plugin_757d1a98' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_nuxtleaflet_01dd76e6 from 'nuxt_plugin_nuxtleaflet_01dd76e6' // Source: .\\nuxt-leaflet.js (mode: 'client')
-import nuxt_plugin_axios_15db6602 from 'nuxt_plugin_axios_15db6602' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_11f35365 from 'nuxt_plugin_plugin_11f35365' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_23daaaaf from 'nuxt_plugin_plugin_23daaaaf' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_nuxtleaflet_25be20bd from 'nuxt_plugin_nuxtleaflet_25be20bd' // Source: .\\nuxt-leaflet.js (mode: 'client')
+import nuxt_plugin_axios_1b28f708 from 'nuxt_plugin_axios_1b28f708' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_nuxtleaflet_976820ae from 'nuxt_plugin_nuxtleaflet_976820ae' // Source: ..\\plugins\\nuxt-leaflet (mode: 'client')
 import nuxt_plugin_vueleaflet_66a53900 from 'nuxt_plugin_vueleaflet_66a53900' // Source: ..\\plugins\\vue-leaflet (mode: 'client')
-import nuxt_plugin_auth_13e44051 from 'nuxt_plugin_auth_13e44051' // Source: .\\auth.js (mode: 'all')
+import nuxt_plugin_auth_ee889db0 from 'nuxt_plugin_auth_ee889db0' // Source: .\\auth.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -216,20 +216,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_101f2248 === 'function') {
-    await nuxt_plugin_plugin_101f2248(app.context, inject)
+  if (typeof nuxt_plugin_plugin_11f35365 === 'function') {
+    await nuxt_plugin_plugin_11f35365(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_757d1a98 === 'function') {
-    await nuxt_plugin_plugin_757d1a98(app.context, inject)
+  if (typeof nuxt_plugin_plugin_23daaaaf === 'function') {
+    await nuxt_plugin_plugin_23daaaaf(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_nuxtleaflet_01dd76e6 === 'function') {
-    await nuxt_plugin_nuxtleaflet_01dd76e6(app.context, inject)
+  if (process.client && typeof nuxt_plugin_nuxtleaflet_25be20bd === 'function') {
+    await nuxt_plugin_nuxtleaflet_25be20bd(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_15db6602 === 'function') {
-    await nuxt_plugin_axios_15db6602(app.context, inject)
+  if (typeof nuxt_plugin_axios_1b28f708 === 'function') {
+    await nuxt_plugin_axios_1b28f708(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_nuxtleaflet_976820ae === 'function') {
@@ -240,8 +240,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vueleaflet_66a53900(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_auth_13e44051 === 'function') {
-    await nuxt_plugin_auth_13e44051(app.context, inject)
+  if (typeof nuxt_plugin_auth_ee889db0 === 'function') {
+    await nuxt_plugin_auth_ee889db0(app.context, inject)
   }
 
   // Lock enablePreview in context

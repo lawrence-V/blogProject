@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const { success, error } = require('consola')
 
 mongoose.connect(
   'mongodb://localhost:27017/NUXTBLOGAPP',
@@ -8,7 +9,7 @@ mongoose.connect(
   },
   (err) => {
     if (!err) {
-      console.log('Databse connected')
+      success({ message: 'Database connected', badge: true })
     } else {
       console.log('Error' + err)
     }

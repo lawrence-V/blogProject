@@ -14,10 +14,10 @@
   "User": {
     "description": "Auto imported from components/User/index.vue"
   },
-  "AuthLogin": {
-    "description": "Auto imported from components/Auth/Login/index.vue"
-  },
   "AuthRegister": {
     "description": "Auto imported from components/Auth/Register/index.vue"
+  },
+  "AuthLogin": {
+    "description": "Auto imported from components/Auth/Login/index.vue"
   }
 }

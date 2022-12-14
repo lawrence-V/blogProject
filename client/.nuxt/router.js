@@ -4,19 +4,19 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _b7c86e84 = () => interopDefault(import('..\\pages\\allpost\\index.vue' /* webpackChunkName: "pages/allpost/index" */))
-const _7ced2ec4 = () => interopDefault(import('..\\pages\\image.vue' /* webpackChunkName: "pages/image" */))
-const _592f0846 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _e13210a8 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _3e6bdfc4 = () => interopDefault(import('..\\pages\\newsfeed\\index.vue' /* webpackChunkName: "pages/newsfeed/index" */))
-const _2ad3d054 = () => interopDefault(import('..\\pages\\profile\\index.vue' /* webpackChunkName: "pages/profile/index" */))
-const _c47e1ca0 = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
-const _3b74b013 = () => interopDefault(import('..\\pages\\testing.vue' /* webpackChunkName: "pages/testing" */))
-const _21e746be = () => interopDefault(import('..\\pages\\auth\\login\\index.vue' /* webpackChunkName: "pages/auth/login/index" */))
-const _4ea1e06a = () => interopDefault(import('..\\pages\\auth\\register\\index.vue' /* webpackChunkName: "pages/auth/register/index" */))
-const _28e0e2a6 = () => interopDefault(import('..\\pages\\allpost\\_id.vue' /* webpackChunkName: "pages/allpost/_id" */))
-const _4037032c = () => interopDefault(import('..\\pages\\newsfeed\\_id.vue' /* webpackChunkName: "pages/newsfeed/_id" */))
-const _748156d6 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _c2ef5d8e = () => interopDefault(import('..\\pages\\allpost\\index.vue' /* webpackChunkName: "pages/allpost/index" */))
+const _6a1959c3 = () => interopDefault(import('..\\pages\\image.vue' /* webpackChunkName: "pages/image" */))
+const _d07e907c = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _37f6e8d1 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _dcdf32ae = () => interopDefault(import('..\\pages\\newsfeed\\index.vue' /* webpackChunkName: "pages/newsfeed/index" */))
+const _35fabf5e = () => interopDefault(import('..\\pages\\profile\\index.vue' /* webpackChunkName: "pages/profile/index" */))
+const _6470326b = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _00662810 = () => interopDefault(import('..\\pages\\testing.vue' /* webpackChunkName: "pages/testing" */))
+const _ecd5cc8e = () => interopDefault(import('..\\pages\\auth\\login\\index.vue' /* webpackChunkName: "pages/auth/login/index" */))
+const _e88630e2 = () => interopDefault(import('..\\pages\\auth\\register\\index.vue' /* webpackChunkName: "pages/auth/register/index" */))
+const _df89643e = () => interopDefault(import('..\\pages\\allpost\\_id.vue' /* webpackChunkName: "pages/allpost/_id" */))
+const _77ac015e = () => interopDefault(import('..\\pages\\newsfeed\\_id.vue' /* webpackChunkName: "pages/newsfeed/_id" */))
+const _6e4f45ba = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -31,55 +31,55 @@ export const routerOptions = {
 
   routes: [{
     path: "/allpost",
-    component: _b7c86e84,
+    component: _c2ef5d8e,
     name: "allpost"
   }, {
     path: "/image",
-    component: _7ced2ec4,
+    component: _6a1959c3,
     name: "image"
   }, {
     path: "/inspire",
-    component: _592f0846,
+    component: _d07e907c,
     name: "inspire"
   }, {
     path: "/login",
-    component: _e13210a8,
+    component: _37f6e8d1,
     name: "login"
   }, {
     path: "/newsfeed",
-    component: _3e6bdfc4,
+    component: _dcdf32ae,
     name: "newsfeed"
   }, {
     path: "/profile",
-    component: _2ad3d054,
+    component: _35fabf5e,
     name: "profile"
   }, {
     path: "/register",
-    component: _c47e1ca0,
+    component: _6470326b,
     name: "register"
   }, {
     path: "/testing",
-    component: _3b74b013,
+    component: _00662810,
     name: "testing"
   }, {
     path: "/auth/login",
-    component: _21e746be,
+    component: _ecd5cc8e,
     name: "auth-login"
   }, {
     path: "/auth/register",
-    component: _4ea1e06a,
+    component: _e88630e2,
     name: "auth-register"
   }, {
     path: "/allpost/:id",
-    component: _28e0e2a6,
+    component: _df89643e,
     name: "allpost-id"
   }, {
     path: "/newsfeed/:id",
-    component: _4037032c,
+    component: _77ac015e,
     name: "newsfeed-id"
   }, {
     path: "/",
-    component: _748156d6,
+    component: _6e4f45ba,
     name: "index"
   }],
 

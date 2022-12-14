@@ -3,21 +3,31 @@ const route = express.Router()
 const multer = require('multer')
 const Blog = require('../models/Blog')
 
-const upload = multer({
-  dest: './uploads',
+const Storage = multer.diskStorage({
+  destination: 'uploads',
+  filename: (req, file, cb) => {
+    cb(null, file.originalname)
+  },
 })
+const upload = multer({
+  storage: Storage,
+}).single('file')
 
-route.post('/post', upload.single('file'), (req, res, next) => {
-  const { title, des, file } = req.body
-
-  if (!title || !des || !file) {
-    return res.status(400).json({ error: 'All the fields are required' })
-  }
+route.post('/post', upload, (req, res, next) => {
+  console.log(req)
+  const { title, des, image, lat, lang } = req.body
+  const name = req.file.originalname
+  // if (!title || !des || !image) {
+  //   return res.status(400).json({ error: 'All the fields are required' })
+  // }
 
   const blogPost = Blog({
     title,
     des,
-    file,
+    name,
+    image,
+    lat,
+    lang,
   })
 
   Blog.create(blogPost)

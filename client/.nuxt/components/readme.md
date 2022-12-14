@@ -11,5 +11,5 @@ You can directly use them in pages and other components without the need to impo
 - `<UserAuthForm>` | `<user-auth-form>` (components/UserAuthForm.vue)
 - `<VuetifyLogo>` | `<vuetify-logo>` (components/VuetifyLogo.vue)
 - `<User>` | `<user>` (components/User/index.vue)
-- `<AuthLogin>` | `<auth-login>` (components/Auth/Login/index.vue)
 - `<AuthRegister>` | `<auth-register>` (components/Auth/Register/index.vue)
+- `<AuthLogin>` | `<auth-login>` (components/Auth/Login/index.vue)

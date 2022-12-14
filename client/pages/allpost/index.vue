@@ -23,10 +23,17 @@
             <td>{{ item.title }}</td>
             <td>{{ item.des.substring(0, 100) }}</td>
             <td class="py-2">
-              <nuxt-link :to="'/allpost/' + item._id" style="text-decoration: none">
-                <v-btn depressed color="primary" @click="item._id">Edit</v-btn></nuxt-link
+              <nuxt-link
+                :to="'/allpost/' + item._id"
+                style="text-decoration: none"
               >
-              <v-btn depressed color="error" @click="deletePost(item._id)">delete</v-btn>
+                <v-btn depressed color="primary" @click="item._id"
+                  >Edit</v-btn
+                ></nuxt-link
+              >
+              <v-btn depressed color="error" @click="deletePost(item._id)"
+                >delete</v-btn
+              >
             </td>
           </tr>
         </tbody>
@@ -40,35 +47,35 @@ export default {
   data() {
     return {
       post: [],
-    }
+    };
   },
   mounted() {
-    this.getallData()
+    this.getallData();
   },
   methods: {
     async getallData() {
       await this.$axios
-        .get('http://localhost:8000/getdata')
+        .get("http://localhost:8100/getdata")
         .then((res) => {
-          this.post = res.data
+          this.post = res.data;
         })
         .catch((err) => {
-          console.log(err)
-        })
+          console.log(err);
+        });
     },
 
     async deletePost(id) {
       await this.$axios
-        .delete('http://localhost:8000/delete/' + id)
+        .delete("http://localhost:8100/delete/" + id)
         .then((res) => {
-          this.getallData()
+          this.getallData();
         })
         .catch((err) => {
-          console.log(err)
-        })
+          console.log(err);
+        });
     },
   },
-}
+};
 </script>
 
 <style></style>
